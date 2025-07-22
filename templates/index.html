@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cybersecurity Risk Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cybersecurity Risk Analyzer</h1>
+        <form action="/analyze" method="POST">
+            <label>Operating System:</label><br>
+            <input type="text" name="os" required><br>
+
+            <label>Do you use antivirus software?</label><br>
+            <select name="antivirus">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+
+            <label>Is your firewall enabled?</label><br>
+            <select name="firewall">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+
+            <label>How strong are your passwords?</label><br>
+            <select name="password">
+                <option value="strong">Strong</option>
+                <option value="weak">Weak</option>
+                <option value="same">Same for all accounts</option>
+            </select><br><br>
+
+            <button type="submit">Analyze Risk</button>
+        </form>
+    </div>
+</body>
+</html>
